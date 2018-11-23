@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AuthAct"
+    tools:showIn="@layout/activity_auth"
+    android:background="@drawable/bg_gradient"
+    >
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/logo_1"/>
+
+    <RelativeLayout
+        android:id="@+id/rvGoogle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:layout_below="@id/ivLogo"
+        android:background="@drawable/bg_btn_white"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/ivGoogle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/google_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/ivGoogle"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="Connect With Google"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rvFb"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_below="@id/rvGoogle"
+        android:background="@drawable/bg_btn_fb"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/ivFb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/facebook_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff9e3"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/ivFb"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="Connect With Facebook"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rvLogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_below="@id/rvFb"
+        android:background="@drawable/bg_btn_login"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff9e3"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="Login"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivBatas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rvLogin"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/batas"/>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_below="@id/ivBatas"
+        android:padding="22dp"
+        android:background="@drawable/bg_btn_signup">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fb664a"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="Sign Up"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

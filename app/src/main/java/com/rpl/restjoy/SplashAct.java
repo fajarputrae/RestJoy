@@ -56,7 +56,7 @@ public class SplashAct extends BaseAct {
 
     private void runNotLoggedInApp() {
         if (!isCancelled) {
-            Intent i = new Intent(this, MainActivity.class);
+            Intent i = new Intent(this, AuthAct.class);
             i.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
             startActivity(i);
             overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
